@@ -1,0 +1,174 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  width: 300px; /* Adjust this value to make the popup wider */
+}
+
+#subscription-section {
+  margin-top: 20px;
+  border-top: 1px solid lightgrey;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#captureQuestion {
+  background-color: #6FE89A; /* Green */
+  width: 100%;
+  font-size: 16px; /* Increase the text size */
+  padding: 10px; /* Adjust padding to make the button bigger */
+  color: white;
+  transition: background-color 0.3s ease !important; /* Smooth transition */
+}
+
+#captureQuestion:hover {
+  background-color: #5fd48a !important; /* Slightly darker green */
+}
+
+#captureQuestion.disabled {
+  background-color: #ccc; /* Grey when disabled */
+  color: white;
+  pointer-events: none; /* Disable hover and clicks */
+}
+
+#captureQuestion.disabled:hover {
+  background-color: #ccc; /* Keep grey when hovered */
+}
+
+#learnRC {
+  background-color: transparent !important; /* Transparent background */
+  border: 2px solid #6FE89A; /* Green outline */
+  width: 100%;
+  font-size: 16px; /* Increase the text size */
+  padding: 10px; /* Adjust padding to make the button bigger */
+  color: #6FE89A; /* Green text color */
+  transition: all 0.3s ease !important; /* Smooth transition */
+}
+
+#learnRC:hover {
+  background-color: #5fd48a !important; /* Slightly darker green */
+}
+
+#saveSubscriptionId {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+}
+
+#saveSubscriptionId:hover {
+  background-color: #5C9B53; /* Green */
+}
+
+#deregisterSubscription {
+  background-color: #FB6107; /* Orange */
+}
+
+/* #deregisterSubscription:hover {
+  border: 2px solid #FFA500;
+} */
+
+.response-container {
+  border: 2px solid #71E89E;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  padding: 10px;
+  color: #33445F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.response-container ul {
+  padding-left: 20px;
+}
+.response-container li {
+  margin-bottom: 5px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+/* Slider when switched on */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Toggle is on (green background and moves circle) */
+input:checked + .slider {
+  background-color: #FB6108;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+/* Rounded slider */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Align text in the middle and make it bigger */
+.stealth-mode-label {
+  font-size: 14px; /* Adjust size as needed */
+  vertical-align: middle;
+  margin-left: 0px; /* Space between the toggle and text */
+  /* font-weight: bold;  */
+  line-height: 24px; /* Match the height of the toggle */
+}
