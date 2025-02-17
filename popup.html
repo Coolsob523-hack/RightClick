@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RightClick</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <div id="answer-section">
-      <div style="display: grid; align-items: center; grid-template-columns: 32px auto; column-gap: 5px;">
-        <img src="icons/icon128.png" style="width: 28px; height: 28px;" />
-        <h2>RightClick</h2>
-      </div>
-      <h4 style="color: #31405D">Response:</h4>
-      <p id="answer" style="font-size:14px;">No response yet.</p>
-    </div>
-
-    <!-- Stealth Mode toggle -->
-    <div id="stealth-mode-toggle" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-        <div style="display: flex; align-items: center;">
-          <span class="stealth-mode-label">&#129399; Stealth Mode</span>
-          <span style="margin-left: 5px;"><a id="learnMoreLink" href="#"><i class="fa fa-info-circle" style="color: #007BFF;"></i></a></span>
-        </div>
-        <label class="switch">
-          <input type="checkbox" id="stealthSwitch">
-          <span class="slider"></span>
-        </label>
-      </div>
-
-    <!-- Subscription Section -->
-    <div id="subscription-section">
-      <h3>Enter Activation Code:</h3>
-      <p>If you have an active plan, check email for activation code or sign up at <b>userightclick.app</b></p>
-      <input type="text" id="subscriptionId" placeholder="Activation Code">
-      <button id="saveSubscriptionId">Activate</button>
-    </div>
-
-    <!-- Paid Message Section -->
-    <div id="paid-message" style="margin-top: 20px; color: #28a745; display: none;">
-      <h4 style="color: #28a745;">I paid for it! ✅</h4>
-    </div>
-  </div>
-  
-  <script src="popup.js"></script>
-  <script>
-    // Simulate checking the subscription status
+<!DOCTYPE html><html><head><title>RightClick</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></head><body><div class="container"><div id="answer-section"><div style="display: grid; align-items: center; grid-template-columns: 32px auto; column-gap: 5px;"><img src="icons/icon128.png" style="width: 28px; height: 28px;"><h2>RightClick</h2></div><h4 style="color: #31405D">Response:</h4><p id="answer" style="font-size:14px;">No response yet.</p></div><div id="stealth-mode-toggle" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;"><div style="display: flex; align-items: center;"><span class="stealth-mode-label">&#129399; Stealth Mode</span> <span style="margin-left: 5px;"><a id="learnMoreLink" href="#"><i class="fa fa-info-circle" style="color: #007BFF;"></i></a></span></div><label class="switch"><input type="checkbox" id="stealthSwitch"> <span class="slider"></span></label></div><div id="subscription-section"><h3>Enter Activation Code:</h3><p>If you have an active plan, check email for activation code or sign up at <b>userightclick.app</b></p><input type="text" id="subscriptionId" placeholder="Activation Code"> <button id="saveSubscriptionId">Activate</button></div><div id="paid-message" style="margin-top: 20px; color: #28a745; display: none;"><h4 style="color: #28a745;">I paid for it! ✅</h4></div></div><script src="popup.js"></script><script>// Simulate checking the subscription status
     function checkSubscriptionStatus() {
       chrome.storage.local.get('subscriptionActive', (result) => {
         const isActive = result.subscriptionActive;
@@ -59,6 +13,4 @@
     }
 
     // Call the function when the popup is loaded to check subscription status
-    window.onload = checkSubscriptionStatus;
-  </script>
-</body>
+    window.onload = checkSubscriptionStatus;</script></body></html>

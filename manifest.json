@@ -30,7 +30,7 @@
       "16": "icons/icon16.png",
       "48": "icons/icon48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4lOFTrOyl7nrwD1XQ5fls3aYX/uAlhZt9Hxqr9etiqpqYm5Cogmt6VPxid/PR1F0k+b/Ek3MmE1G0yvGo9vOMCy8I4ldoeyL/CL+WxRbRAHtR0VQyLUnq3nBcxz9abqIx5wvoYsICMlK61CJu1QcnV8pRA4WrUJWXAxus2OYJyJDY6KEq+Fn/2ElosWeU0mgqBnOw28gzvQ4QidGDJWVPNUIibiSR/oVGcyrRArUVJXcFs/mjstMys+expxm847Nzw4bksg3GcN196SPx6I5NRokexWBR/B+Rp2/DspbfNoferpBFRiNBXxKB6YHHcPoRLqXTEUKU+JZqvBa+geqwIDAQAB",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi8Jy7ag87+FtAktyxbGJ4UrCL6OmwLbPbIG6lKPJcqm8Y3LfHL+CpzhDFpvRf/1mNwI+kf27cDg3e+mwSBGxjlA4vc4LV+TVM16oWKRBE9qfZvPRZkMrq4PCd95QsLSU8zLAxN2Vu/0vJCSMWuIZITP17oDByIeg/8AQUU0J/I/OGlC5805f88mhCAD9shwqZB1dm3g3Fp5ebGzLtB4ct6Umc3xobAXdwEwAjVSo9DVVN2XbdtmuuBoaBGZYDB3vxPyjYgDnt8FQDK03dKrjZDYoQhXgKbgbUaOxoHZrJ4lDjcYpU++yXNRfP4mIP3A5ghY+qv4y9WqvH7+dmtXH6wIDAQAB",
    "manifest_version": 3,
    "name": "RightClick",
    "permissions": [ "activeTab", "scripting", "contextMenus", "storage", "alarms", "tabs" ],
